@@ -4,7 +4,7 @@
       <a class="page-link" (click)="currentPage = currentPage - 1">Prev</a>
     </li>
 
-    <ng-container *ngFor="let image of images; let i = index">
+    <ng-container *appTimes="images.length; let i = index">
       <li
         class="page-item"
         *ngIf="checkWindowIndex(i)"
@@ -36,6 +36,6 @@
   <div *ngSwitchDefault>default</div>
 </div> -->
 
-<ul *appTimes="5">
+<!-- <ul *appTimes="5">
   <li>Hi there</li>
-</ul>
+</ul> -->
